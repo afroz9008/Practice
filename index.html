@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice3</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="small-menu" class="small-menu">
+        <ul>
+            <li><a href="#header" id="link">Home</a></li>
+            <li><a href="#AboutUs" id="link">AboutUs</a></li>
+            <li><a href="#Services" id="link">Services</a></li>
+            <li><a href=# id="link">Portfolio</a></li>
+            <li><a href=# id="link">Blog</a></li>
+            <li><a href=# id="link">Testimonial</a></li>
+            <li><a href=# id="link">ContactUs</a></li>
+            <div>
+        </ul>
+
+    </nav>
+    <div class="divMenu">
+        <img src="assets/vison.png">
+        <nav class="navMenu">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#AboutUs">AboutUs</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href=#>Portfolio</a></li>
+                <li><a href=#>Blog</a></li>
+                <li><a href=#>Testimonial</a></li>
+                <li><a href=#>ContactUs</a></li>
+                <div>
+            </ul>
+            <div class="small-device-menu" id="menu">Menu</div>
+        </nav>
+    </div>
+    <header id="header">
+        <div class="title">
+            <div class="name">Creative</div>
+            <div class="description">Everything you need.To Start selling online beautifully. </div>
+            <button class="discoverBtn">Discover More</button>
+        </div>
+    </header>
+    <section class="section1" id="AboutUs">
+        <h2 class="heading1">Welcome to</h2>
+        <hr class="heading1-border">
+        <article class="article1">
+            The meta element represents various kinds of metadata that cannot be expressed using the title, base, link,
+            style, and script elements.The meta element represents various kinds of metadata that cannot be expressed
+            using the title, base, link,
+            style, and script elements.The meta element represents various kinds of metadata that cannot be expressed
+            using the title, base, link, style, and script elements.
+        </article>
+        <article class="article1">
+            The meta element represents various kinds of metadata that cannot be expressed using the title, base, link,
+            style, and script elements.The meta element represents various kinds of metadata that cannot be expressed
+            using the title, base, link,
+            style, and script elements.The meta element represents various kinds of metadata that cannot be expressed
+            using the title, base, link, style, and script elements.
+        </article>
+    </section>
+    <section class="section2">
+        <table width="100%">
+            <tr>
+                <td>
+                    <!-- <img src="assets/img1.png"> -->
+                </td>
+                <td class="why-us">
+                    <h2>Why</h2>
+                    <ul>
+                        <li>
+                            <b>We are Creative</b><br>
+                            The header element represents introductory content for its nearest ancestor sectioning
+                            content or sectioning root element.
+                        </li>
+                        <hr align="left">
+                        <li>
+
+                            <b>Developer with best skills</b><br>
+                            The header element represents introductory content for its nearest ancestor sectioning
+                            content or sectioning root element.
+                        </li>
+                        <hr align="left">
+                        <li>
+                            <b>Cool Designs and ux</b><br>
+                            The header element represents introductory content for its nearest ancestor sectioning
+                            content or sectioning root element.
+                        </li>
+                        <hr align="left">
+                    </ul>
+
+                </td class="why-us">
+            </tr>
+        </table>
+    </section>
+    <section class="section3" id="Services">
+        <div>
+            <h2 class="heading1">Awesome</h2>
+            <hr class="heading1-border">
+            <article class="article1">
+                The meta element represents various kinds of metadata that cannot be expressed using the title, base,
+                link,style, and script elements.The meta element represents various kinds of metadata that cannot be
+                expressed using the title, base, link,style, and script elements.The meta element represents various
+                kinds of metadata that cannot be expressed using the title, base, link, style, and script elements.
+            </article>
+        </div>
+        <div class="features-box">
+            <div class="box1">
+                <h2>Unlimited Features</h2>
+                The meta element represents various kinds of metadata that cannot be expressed using the title, base,
+                link,style, and script elements.The meta element represents various kinds of metadata that cannot be
+                expressed using the title, base,
+                link,style, and script elements.The meta element represents various kinds of metadata that cannot be
+                expressed using the title, base,
+                link,style, and script elements.
+            </div>
+            <div class="box2">
+                <img src="assets/ruler.png" width="50px">
+                <h1>Creative Designs</h1>
+            </div>
+            <div class="box3">
+                <img src="assets/ruler.png" width="50px">
+                <h1>Responsive Designs</h1>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div>
+            <h2>About Us</h2>
+            We Want to help bring talented students.
+            <h2>Contact Us</h2>
+            <ul>
+                <li>+91 99999 99999</li>
+                <li>youremailid.com</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Information</h2>
+            <ul>
+                <li>About Us</li>
+                <li>More Search</li>
+                <li>Blog</li>
+                <li>Testimonials</li>
+                <li>Events</li>
+            </ul>
+        </div>
+        <div>
+
+            <h2>Helpful Links</h2>
+            <ul>
+                <li>Services</li>
+                <li>Support</li>
+                <li>Term & Condition</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Subscribe More Info</h2>
+            <input type="email" placeholder="Enter Your Mail"><br>
+            <button class="subscribe">Subscribe</button>
+        </div>
+    </footer>
+</body>
+<script>
+    (function () {
+        let click = true;
+        document.getElementById("menu").addEventListener('click', () => {
+            if (click) {
+                document.getElementById("small-menu").style.display = "block";
+                click = false;
+                document.getElementById("menu").innerText = "X";
+            }
+            else {
+                document.getElementById("small-menu").style.display = "none";
+                click = true;
+                document.getElementById("menu").innerText = "Menu";
+
+            }
+            window.addEventListener("resize", () => {
+                if (window.outerWidth >= 768) {
+                    document.getElementById("small-menu").style.display = "none";
+                    click = true;
+                    document.getElementById("menu").innerText = "Menu";
+                }
+            });
+        });
+    })();
+</script>
+
+
+</html>

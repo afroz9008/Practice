@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
+
+body{
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background: gray;
+}
+body::-webkit-scrollbar-track{
+    background: linear-gradient(0deg,black,gray);
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(0deg,rgb(255, 145, 0),rgb(250, 246, 3));
+}
+#header{
+    background-image:url(../assets/header.JPG);
+    background-size: cover;
+    color:white;
+    filter: hue-rotate(220deg);
+    height: 100%;
+}
+.divMenu{
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    z-index: 1;
+    width: 99%;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+.navMenu{
+    display: flex;
+}
+.divMenu img{
+    width:50px;
+    height: 50px;
+    animation: colorChanger 2s linear infinite;
+}
+@keyframes colorChanger{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(180deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.navMenu ul li{
+    display: inline;
+}
+.navMenu ul li a{
+    padding: 5px;
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.navMenu ul li a:hover{
+    border-bottom: 2px solid red;
+    color:red;
+}
+.title{
+    display: flex;
+    height:100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(0,0,0,50%);
+
+}
+.title .name{
+    font-size: 50px;    
+    box-sizing: border-box;
+    padding: 10px;
+    letter-spacing: 3px;
+    background: rgba(0,0,0,50%);
+}
+.title .name::after{
+    content: " Business";
+    color:rgb(0, 255, 136);
+}
+.description{
+    margin: 5px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.discoverBtn{
+    margin: 10px;
+    background:rgb(0, 255, 136);
+    border:0;
+    font-size: 20px;
+    cursor: pointer;
+    color:white;
+    padding: 10px;
+    letter-spacing: 5px;
+    border-radius: 50px;
+    outline: none;
+}
+.discoverBtn:hover{
+    background: lime;
+}
+.section1,.section3{
+    text-align: center;
+}
+.heading1{
+    font-family: 'Oleo Script', cursive;
+    text-transform: capitalize;
+    font-size: 35px;
+    margin: 100px 0 0 0px;
+}
+.section1 .heading1::after{
+    content: " Vision";
+    color:rgb(255, 145, 0);   
+}
+.section3 .heading1::after{
+    content: " Features";
+    color:rgb(255, 145, 0);   
+}
+.heading1-border{
+    width:100px;
+    border: 0;
+    height: 3px;
+    border-radius: 10px;
+    background: linear-gradient(90deg,red,blue,green,yellow,lime);
+}
+.article1{
+    box-sizing: border-box;
+    padding: 10px 15% 10px 15%;
+}
+td:nth-child(1){
+    width: 50%;
+    background-image: url(../assets/img1.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.section2{
+    margin-top: 10px;
+    background: rgb(250, 233, 201);
+}
+.why-us>h2{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.why-us>h2::after{
+    content: " us";
+    color:rgb(255, 145, 0);   
+}
+.why-us{
+    padding: 30px;
+}
+.why-us ul li b{
+    font-size: 30px;
+    margin: 10px 0 0 0;
+}
+.why-us ul hr{
+    width: 100px;
+    background: rgb(255, 145, 0);
+    border:0;
+    height: 2px;
+}
+.features-box{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+.box1,.box2,.box3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+    width:30%;
+    margin: 10px;
+    border: 1px solid rgb(255, 145, 0);
+    box-shadow: 2px 2px 10px rgb(255, 145, 0);
+}
+.box1>h2,.box2>h1,.box3>h1{
+    margin: 10px;
+    font-family: 'Oleo Script', cursive;
+    text-transform: capitalize;
+    font-size: 35px;
+    color:rgb(255, 145, 0);
+}
+.box1:hover,.box2:hover,.box3:hover{
+    box-shadow: 2px 2px 10px rgb(255, 145, 0) inset;
+}
+.footer{
+    margin-top: 50px;
+    height: fit-content;
+    padding: 30px 0 30px 0;
+    color:white;
+    font-size: 20px;
+    background: black;
+    display: flex;
+    justify-content: space-around;    
+}
+.footer div{
+    font-size: 15px;
+    margin: 10px;
+    width: fit-content;
+}
+.footer h2{
+    color:rgb(255, 145, 0);
+}
+.footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+input{
+    border: 0;
+    border-radius: 5px;
+    height: 20px;
+    padding: 3px;
+}
+.subscribe{
+    width:fit-content;
+    border-radius: 5px;
+    margin-top: 10px;
+    color:white;
+    cursor: pointer;
+    padding:3px 10px 3px 10px;
+    border: 0;
+    background: rgb(255, 145, 0);
+}
+.small-device-menu{
+    display: none;
+    color:red;
+}
+.small-menu{
+    background: rgba(0,0,0,80%);
+    position: absolute;
+    width:100%;
+    top:10%;
+    height: 90vh;
+    z-index: 1;
+    display: none;
+}
+.small-menu ul li{
+    list-style: none;
+    text-align: center;
+}
+.small-menu ul li a{
+    text-decoration: none;
+    display: block;
+    color:red;
+    padding: 12px;
+    transition: all 1s;
+}
+.small-menu a:hover{
+    color: dodgerblue;
+}
+@media screen and (max-width:768px){
+    td:nth-child(1){
+        height:70vh;
+        width: 100%;
+    }
+    td{
+        display: block;
+    }
+    .article1{
+        padding:10px 50px 10px 50px;
+    }
+    .navMenu ul li{
+        display: none;
+    }
+    .title{
+        height: 100%;
+    }
+    .navMenu img{
+        display: block;
+        position: fixed;
+        left:0px;
+    }
+    .small-device-menu{
+        display:block;
+        cursor: pointer;
+        padding: 10px;
+        font-family: roboto;
+        font-size: 20px;
+        right: 10px;
+        transition: all 1s;
+    }
+    .small-device-menu:hover{
+        color:aqua;
+        border-bottom:1px solid aqua;
+    }
+    .features-box{
+        font-size: 13px;
+    }
+    .footer{
+        font-size: 10px;
+    }
+    .footer h2{
+        font-size:15px;
+    }
+}
+@media screen and (max-width:582px){
+    .features-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer{
+        flex-direction: column;
+        align-items:flex-start;
+        font-size: 20px;
+    }
+    .footer h2{
+        font-size:25px;
+    }
+    .features-box>div{
+        width: 90%;
+    }
+}
+@media screen and (max-width:485px){
+    .title .name{
+        font-size: 30px;
+    }
+    .title .description{
+        font-size: 13px;
+    }
+    .features-box>div{
+        width: 86%;
+    }
+}
+@media screen and (max-width:378px){
+    .title .name{
+        font-size: 23px;
+    }
+    .title .description{
+        font-size: 10px;
+    }
+    .features-box>div{
+        margin: 5px;
+    }
+}
